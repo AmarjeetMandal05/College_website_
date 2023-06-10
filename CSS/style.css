@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(../image/university3.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background: rgb(245, 68, 3);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+
+.text-box h1{
+    font-size: 66px;
+}
+.text-box p{
+    color: #fff;
+    font-size: 15px;
+    margin: 20px;
+}
+.hero-btn{
+    margin-top: 19px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    padding: 13px 20px ;
+    height: 20px;
+    width: 202px;
+}
+.hero-btn:hover{
+    background: rgb(243, 93, 38);
+    transition: 0.5s;
+    border: 1px solid rgb(243, 93, 38) ;
+}
+
+nav .fa{
+    display: none;
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-weight: 300;
+    line-height: 19px;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: -12px;
+
+}
+
+.course-col{
+    background : rgb(248, 221, 226);
+    padding: 19px 12px;
+    box-sizing: content-box;
+    margin-right: 28px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px ;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+ 
+/* Campus */
+.campus{
+    width: 80%;
+    padding-top: 60px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.campus-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background-color: rgba(238, 25, 25, 0.7);
+}
+.layer h3{
+    color: white;
+    font-size: 23px;
+    opacity: 0;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    opacity: 2;
+    bottom: 49%;
+}
+
+/* FACILITIES */
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding-top: 30px;
+}
+.facilities-col{
+    flex-basis: 30%;
+    text-align: left;
+
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.facilities-col h3{
+    margin-bottom: 7px;
+}
+
+.facilities-col p{
+    margin-top: 4px;
+    padding: 0px;
+    text-align: left;
+    color: gray;
+}
+
+
+/* testimonials */
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.testimonials-col{
+    background: rgb(214, 86, 108);
+    flex-basis: 41%;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    cursor: pointer;
+    padding: 25px;
+    display: flex;
+}
+
+.testimonials-col img{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonials-col h3{
+    text-align: left;
+}
+
+/* Call to action */
+
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/asset\ 6.png);
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.footer h4{
+    margin-top: 9px;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
